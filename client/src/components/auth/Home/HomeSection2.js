@@ -8,6 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import Routes from "../../../routes/Routes";
 
 const HomeComponent2 = () => {
   return (
@@ -38,10 +39,20 @@ const HomeComponent2 = () => {
             rowGap={"1rem"}
             columnGap={"1rem"}
           >
-            <Button>
-              <Link>Order Meals</Link>
+            <Button
+              bg={"primary.100"}
+              _hover={{ bg: "primary.400" }}
+              color="white"
+            >
+              <Link to={Routes.HOME}>Order Meals</Link>
             </Button>
-            <Button>App Store</Button>
+            <Button
+              bg={"primary.100"}
+              _hover={{ bg: "primary.400" }}
+              color="white"
+            >
+              App Store
+            </Button>
           </Flex>
         </Flex>
         <Flex w="60%" height={{ base: "50vh", md: "80vh" }}>

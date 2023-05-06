@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import { useCallback, useEffect, useState } from "react";
 
 const titles = [
@@ -24,11 +24,18 @@ const HomeComponent3 = () => {
   }, [shuffle]);
 
   return (
-    <Flex px={{ base: "1rem", md: "5rem" }} h="50vh">
-      <Flex flexDirection={"column"} rowGap={"2rem"} justifyContent={"center"}>
+    <Flex rowGap={"3rem"} py="2rem" pb="5rem" flexDirection={"column"}>
+      <Flex flexDirection={"column"} rowGap={"1rem"} justifyContent={"center"}>
         <Heading>{title}</Heading>
         <Text fontSize={"20px"} color={"gray.600"} fontWeight={"medium"}>
           Order food from favourite restaurants near you.
+        </Text>
+      </Flex>
+      <Flex flexDirection={"column"} rowGap={"1rem"}>
+        <Text color={"gray.500"}>POPULAR CITIES IN INDIA</Text>
+        <Text color={"gray.600"} fontWeight={500}>
+          Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai
+          Pune & more.
         </Text>
       </Flex>
     </Flex>
