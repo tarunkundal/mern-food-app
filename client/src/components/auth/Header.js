@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image } from "@chakra-ui/react";
+import { Button, Flex, Image } from "@chakra-ui/react";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Routes from "../../routes/Routes";

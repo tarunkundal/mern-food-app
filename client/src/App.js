@@ -2,7 +2,6 @@ import { Route, Switch } from "react-router-dom";
 
 import Meals from "./components/Meals/Meals";
 import AvailableMeals from "./components/Meals/AvailableMeals";
-import MealsMainHeader from "./components/Meals/MealsMainHeader";
 import SignIN from "./components/auth/Signin";
 import Home from "./components/auth/Home/Home";
 import Routes from "./routes/Routes";
@@ -15,7 +14,6 @@ const App = () => {
       <Route path={Routes.SIGNIN} exact component={SignIN} />
       <Route path={Routes.SIGNUP} exact component={SignUp} />
 
-      <MealsMainHeader />
       <Route path={Routes.HOME} exact component={Meals} />
       <AvailableMeals />
     </Switch>

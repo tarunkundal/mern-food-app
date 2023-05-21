@@ -39,10 +39,10 @@ const MealItem = (props) => {
     >
       <Box
         role={"group"}
-        p={6}
+        p={{ base: 2, md: 4 }}
+        pt="0"
         mb="2rem"
-        maxW={"330px"}
-        bg={useColorModeValue("white", "gray.800")}
+        maxW={"350px"}
         boxShadow={"2xl"}
         rounded={"lg"}
         pos={"relative"}
@@ -50,45 +50,26 @@ const MealItem = (props) => {
         display={"flex"}
         flexDirection={"column"}
         justifyContent={"space-around"}
+        h="25rem"
       >
-        <Box
-          rounded={"lg"}
-          mt={-14}
-          pos={"relative"}
-          height={"230px"}
-          _after={{
-            transition: "all .3s ease",
-            content: '""',
-            w: "full",
-            h: "full",
-            pos: "absolute",
-            top: 3,
-            left: 0,
-            backgroundImage: `url(${IMAGE})`,
-            filter: "blur(15px)",
-            zIndex: -1,
-          }}
-          _groupHover={{
-            _after: {
-              filter: "blur(20px)",
-            },
-          }}
-        >
+        <Center>
           <Image
-            rounded={"xl"}
-            height={230}
-            width={282}
+            rounded={"lg"}
+            height={{ base: 150, md: 170 }}
+            width={{ base: 200, md: 220 }}
             objectFit={"cover"}
             src={props.image}
+            mt={{ base: "-10", md: "-5" }}
+            boxShadow={"dark-lg"}
           />
-        </Box>
+        </Center>
         <Stack align={"center"}>
           <Heading
             fontSize={"2xl"}
             textAlign={"center"}
             fontFamily={"Open Sans"}
             fontWeight={500}
-            pt="3"
+            pt={{ base: "-1", md: "3" }}
           >
             {props.name}
           </Heading>
@@ -96,7 +77,7 @@ const MealItem = (props) => {
             {foodDescripition}
           </Text>
           <Stack direction={"row"} align={"center"}>
-            <Text fontWeight={800} fontSize={"xl"} color="brown">
+            <Text fontWeight={800} fontSize={"xl"} color="primary.400">
               ₹{props.price}
             </Text>
             <Text textDecoration={"line-through"} color={"gray.600"}>

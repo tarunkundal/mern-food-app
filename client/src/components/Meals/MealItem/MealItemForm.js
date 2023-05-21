@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Input from "../../UI/Input";
-import styles from "./MealItemForm.module.css";
 import { Button, Center } from "@chakra-ui/react";
 
 const MealItemForm = (props) => {
@@ -30,7 +29,7 @@ const MealItemForm = (props) => {
 
   return (
     <>
-      <form className={styles.form} onSubmit={submitHandler}>
+      <form onSubmit={submitHandler}>
         <Input
           mealsQuantity={updatedInputQuantity}
           label="Quantanity"
@@ -48,8 +47,10 @@ const MealItemForm = (props) => {
             type="submit"
             color={"white"}
             alignContent={"center"}
-            bg={"#8a2b06"}
+            bg="primary.100"
+            _hover={{ bg: "primary.400" }}
             mt={3}
+            size={"sm"}
           >
             Add Item
           </Button>
