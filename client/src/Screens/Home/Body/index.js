@@ -1,7 +1,7 @@
 // https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf
 import { Flex, Image, Text } from "@chakra-ui/react";
-import HomeComponent2 from "./HomeSection2";
-import AuthHome from "./HomeSection1";
+import Body1 from "./BodyCom1";
+import Header from "../Header";
 import Footer from "../Footer";
 
 const data = [
@@ -28,10 +28,9 @@ const data = [
   },
 ];
 
-const Home = () => {
+const Body = () => {
   return (
     <>
-      <AuthHome />
       <Flex
         py="2rem"
         h="450px"
@@ -77,10 +76,9 @@ const Home = () => {
           );
         })}
       </Flex>
-      <HomeComponent2 />
-      <Footer />
+      <Body1 />
     </>
   );
 };
 
-export default Home;
+export default Body;

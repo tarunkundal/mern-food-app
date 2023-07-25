@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import Routes from "../../../routes/Routes";
 
-const HomeComponent2 = () => {
+const BodyCom1 = () => {
   return (
     <>
       <Stack
@@ -70,4 +70,4 @@ const HomeComponent2 = () => {
   );
 };
 
-export default HomeComponent2;
+export default BodyCom1;

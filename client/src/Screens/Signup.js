@@ -16,7 +16,7 @@ import {
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import Routes from "../../routes/Routes";
+import Routes from "../routes/Routes";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);

@@ -9,7 +9,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import Logo from "../../assets/logo.png";
+import Logo from "../../../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -32,19 +32,19 @@ const Footer = () => {
         <Stack direction={"row"} spacing={6}>
           <Button rounded="full" label={"Twitter"}>
             <Link href="https://www.twitter.com">
-              <FaTwitter />
+              <FaTwitter color="skyblue" />
             </Link>
           </Button>
 
           <Button rounded="full" label={"YouTube"}>
             <Link href={"https://www.youtube.com"}>
-              <FaYoutube />
+              <FaYoutube color="red" />
             </Link>
           </Button>
 
           <Button rounded="full" label={"Instagram"}>
             <Link href={"https://www.instagram.com"}>
-              <FaInstagram />
+              <FaInstagram color="orange" />
             </Link>
           </Button>
         </Stack>

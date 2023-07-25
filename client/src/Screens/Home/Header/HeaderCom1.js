@@ -1,9 +1,9 @@
 import { Button, Flex, Image } from "@chakra-ui/react";
-import Logo from "../../assets/logo.png";
+import Logo from "../../../assets/logo.png";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import Routes from "../../routes/Routes";
+import Routes from "../../../routes/Routes";
 
-const Header = () => {
+const HeaderCom1 = () => {
   return (
     <Flex
       direction={"row"}
@@ -39,4 +39,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderCom1;

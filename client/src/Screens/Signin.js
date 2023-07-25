@@ -11,9 +11,9 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import Routes from "../../routes/Routes";
+import Routes from "../routes/Routes";
 
-const SignIN = () => {
+const SignIn = () => {
   return (
     <Flex
       minH={"100vh"}
@@ -71,4 +71,4 @@ const SignIN = () => {
   );
 };
 
-export default SignIN;
+export default SignIn;

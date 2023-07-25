@@ -10,7 +10,7 @@ const titles = [
   "Hungry?",
 ];
 
-const HomeComponent3 = () => {
+const HeaderCom2 = () => {
   const [title, setTitle] = useState("");
 
   const shuffle = useCallback(() => {
@@ -34,12 +34,12 @@ const HomeComponent3 = () => {
       <Flex flexDirection={"column"} rowGap={"1rem"}>
         <Text color={"gray.500"}>POPULAR CITIES IN INDIA</Text>
         <Text color={"gray.600"} fontWeight={500}>
-          Ahmedabad Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai
-          Pune & more.
+          Ahmedabad, Bangalore, Chennai, Delhi, Gurgaon, Hyderabad, Kolkata,
+          Mumbai, Pune, & more.
         </Text>
       </Flex>
     </Flex>
   );
 };
 
-export default HomeComponent3;
+export default HeaderCom2;
