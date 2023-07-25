@@ -9,7 +9,7 @@ mongoose
     }
   )
   .then(() => {
-    console.log("connect to database sucessfully");
+    console.log("Connected to database sucessfully");
   })
   .catch((err) => {
     console.log("Error while connected to databse", err);
