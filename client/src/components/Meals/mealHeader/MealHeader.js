@@ -36,13 +36,12 @@ const data = [
 const MealHeader = () => {
   return (
     <>
-      <Box mt="3rem" bgColor={"gray.50"} py={10}>
+      <Box mt="3rem" bgColor={"gray.50"} py={10} color={"primary.100"}>
         <Heading
           textAlign={{ base: "center", md: "left" }}
           ml={{ base: "0", md: "5rem" }}
           mb="2rem"
           fontWeight={"bold"}
-          fontFamily={"Open Sans"}
         >
           Inspiration for your first order
         </Heading>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Box, Flex, Heading, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -33,8 +33,11 @@ const MealHeaderItem = (props) => {
                 rounded={"2xl"}
                 maxW="95%"
                 boxShadow={"md"}
-                transition={" box-shadow .5s, ease .5s"}
-                _hover={{ boxShadow: "2xl" }}
+                transition={"ease-in box-shadow .5s, ease .5s"}
+                _hover={{
+                  boxShadow: "2xl",
+                  transform: "scale(.94)",
+                }}
                 key={item.name}
               >
                 <Box
@@ -51,12 +54,11 @@ const MealHeaderItem = (props) => {
                       alt={`Picture of ${item.name}`}
                       boxSize={{ base: "130px", md: "200px" }}
                       rounded={"full"}
-                      boxShadow={"1px 2px 4px 1px rgba(138, 43, 6,0.4)"}
                       transition={"ease-in-out .8s all"}
                       _hover={{ transform: "scale(1.1) rotate(5deg) " }}
                     />
 
-                    <Box
+                    <Heading
                       fontSize={{ base: "lg", md: "xl" }}
                       color="brown"
                       as="h5"
@@ -64,7 +66,7 @@ const MealHeaderItem = (props) => {
                       mt={2}
                     >
                       {item.name}
-                    </Box>
+                    </Heading>
                   </Link>
                 </Box>
               </Flex>

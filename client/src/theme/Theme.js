@@ -9,8 +9,9 @@ const Theme = extendTheme({
     },
   },
   fonts: {
-    heading: "Montserrat, sans-serif", // Replace with your desired heading font
-    body: "Roboto, sans-serif", // Replace with your desired body font
+    heading: "Lumanosimo, cursive ",
+    body: "Libre Baskerville, serif",
+    input: "eyada, cursive",
   },
 });
 

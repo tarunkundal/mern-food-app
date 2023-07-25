@@ -13,7 +13,9 @@ const HeaderSearch = () => {
         w={{ base: "150px", md: "md" }}
         bg="gray.100"
         rounded={"md"}
-        textColor={"gray.600"}
+        textColor={"primary.400"}
+        fontWeight={"900"}
+        fontFamily={"eyada, cursive"}
       >
         <InputGroup>
           <InputRightElement
@@ -25,7 +27,8 @@ const HeaderSearch = () => {
             outlineColor={"brown"}
             type="text"
             name="name"
-            placeholder="Search Food "
+            placeholder="Search Your Favourite Food"
+            fontWeight={"semibold"}
           />
         </InputGroup>
       </FormControl>

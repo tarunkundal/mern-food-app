@@ -30,9 +30,7 @@ const RandomMeals = () => {
   return (
     <>
       <Center my={{ base: "3", md: "7" }}>
-        <Heading fontFamily={"Open Sans"} color={"brown"}>
-          Your Favourite Meals are here
-        </Heading>
+        <Heading color={"primary.100"}>Your Favourite Meals are here</Heading>
       </Center>
       {allMeals.map((meal) => {
         return (
