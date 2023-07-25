@@ -5,6 +5,7 @@ import useFetchAllMeals from "../../../hooks/useFetchAllMeals";
 
 const RandomMeals = () => {
   useFetchAllMeals();
+
   const { meals } = useMealStore();
 
   const northMeals = meals

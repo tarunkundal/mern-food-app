@@ -34,6 +34,7 @@ const data = [
 ];
 
 const MealHeader = () => {
+  const id = data.map((item) => item.id);
   return (
     <>
       <Box mt="3rem" bgColor={"secondary"} py={10} color={"primary.100"}>
@@ -46,7 +47,7 @@ const MealHeader = () => {
           Inspiration for your first order
         </Heading>
 
-        <MealHeaderItem data={data} />
+        <MealHeaderItem data={data} key={id} />
       </Box>
     </>
   );
