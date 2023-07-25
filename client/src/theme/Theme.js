@@ -8,6 +8,10 @@ const Theme = extendTheme({
       100: "#d73d00",
     },
   },
+  fonts: {
+    heading: "Montserrat, sans-serif", // Replace with your desired heading font
+    body: "Roboto, sans-serif", // Replace with your desired body font
+  },
 });
 
 export default Theme;

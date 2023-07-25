@@ -41,7 +41,7 @@ const MealHeader = () => {
           textAlign={{ base: "center", md: "left" }}
           ml={{ base: "0", md: "5rem" }}
           mb="2rem"
-          fontWeight={"medium"}
+          fontWeight={"bold"}
           fontFamily={"Open Sans"}
         >
           Inspiration for your first order

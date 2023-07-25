@@ -11,7 +11,7 @@ const MealHeaderItem = (props) => {
     infinite: true,
     arrows: false,
     dots: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     lazyLoad: true,
     autoplay: true,
@@ -52,6 +52,8 @@ const MealHeaderItem = (props) => {
                       boxSize={{ base: "130px", md: "200px" }}
                       rounded={"full"}
                       boxShadow={"1px 2px 4px 1px rgba(138, 43, 6,0.4)"}
+                      transition={"ease-in-out .8s all"}
+                      _hover={{ transform: "scale(1.1) rotate(5deg) " }}
                     />
 
                     <Box
