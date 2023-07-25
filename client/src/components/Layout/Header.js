@@ -36,10 +36,6 @@ const Header = (props) => {
           height={"100%"}
           objectFit={"cover"}
           transform={"rotateZ(-5deg) translateY(-4rem) translateX(-1rem)"}
-          style={{
-            WebkitBoxReflect:
-              "below 0px linear-gradient(transparent, rgba(0,0,0,0.0),rgba(0,0,0,0.3))",
-          }}
         />
       </Box>
     </>

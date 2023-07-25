@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Stack } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import MealHeaderItem from "./MealHeaderItem";
 
 const data = [
@@ -36,7 +36,7 @@ const data = [
 const MealHeader = () => {
   return (
     <>
-      <Box mt="3rem" bgColor={"gray.50"} py={10} color={"primary.100"}>
+      <Box mt="3rem" bgColor={"secondary"} py={10} color={"primary.100"}>
         <Heading
           textAlign={{ base: "center", md: "left" }}
           ml={{ base: "0", md: "5rem" }}

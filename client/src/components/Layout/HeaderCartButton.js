@@ -64,8 +64,8 @@ const HeaderCartButton = (props) => {
   return (
     <Button
       onClick={headerCartButtonHandler}
-      bg={"rgb(117, 1, 1)"}
-      _hover={{ bg: "#4b1701" }}
+      bg={"primary.900"}
+      _hover={{ bg: "primary.100" }}
       fontSize={"14px"}
       rounded={"full"}
       animation={btnIsHighLighted ? animation : ""}
@@ -77,12 +77,10 @@ const HeaderCartButton = (props) => {
 
         <Text display={{ base: "none", md: "block" }}>Your Cart</Text>
         <Box
-          bg="#d73d00"
+          bg="teritory"
           p={"0.25rem 1rem"}
           rounded={"xl"}
           fontWeight={"bold"}
-          _hover={{ bgColor: "#92320c" }}
-          _active={{ bgColor: "#92320c" }}
         >
           {numberOfCartItems}
         </Box>

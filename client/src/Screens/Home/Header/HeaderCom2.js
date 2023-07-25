@@ -26,14 +26,16 @@ const HeaderCom2 = () => {
   return (
     <Flex rowGap={"3rem"} py="2rem" pb="5rem" flexDirection={"column"}>
       <Flex flexDirection={"column"} rowGap={"1rem"} justifyContent={"center"}>
-        <Heading>{title}</Heading>
-        <Text fontSize={"20px"} color={"gray.600"} fontWeight={"medium"}>
+        <Heading color={"teritory"}>{title}</Heading>
+        <Text fontSize={"20px"} fontWeight={"medium"}>
           Order food from favourite restaurants near you.
         </Text>
       </Flex>
       <Flex flexDirection={"column"} rowGap={"1rem"}>
-        <Text color={"gray.500"}>POPULAR CITIES IN INDIA</Text>
-        <Text color={"gray.600"} fontWeight={500}>
+        <Text fontSize={"18px"} fontWeight={"bold"}>
+          POPULAR CITIES IN INDIA
+        </Text>
+        <Text color={"gray.600"} fontWeight={"medium"}>
           Ahmedabad, Bangalore, Chennai, Delhi, Gurgaon, Hyderabad, Kolkata,
           Mumbai, Pune, & more.
         </Text>

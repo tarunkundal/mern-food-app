@@ -6,6 +6,7 @@ import useFetchAllMeals from "../../../hooks/useFetchAllMeals";
 const RandomMeals = () => {
   useFetchAllMeals();
   const { meals } = useMealStore();
+
   const northMeals = meals
     .filter((meal) => meal.category === "north indian")
     .slice(0, 2);

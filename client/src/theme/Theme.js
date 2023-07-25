@@ -7,6 +7,8 @@ const Theme = extendTheme({
       900: "rgb(117, 1, 1)",
       100: "#d73d00",
     },
+    secondary: "#FFFAF4",
+    teritory: "#F99B7D",
   },
   fonts: {
     heading: "Lumanosimo, cursive ",

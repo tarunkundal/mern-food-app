@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <Flex pl={{ base: "2rem", md: "5rem" }} bg="gray.50">
+    <Flex pl={{ base: "2rem", md: "5rem" }} bg="secondary">
       <Box w={{ base: "100%", md: "60%" }}>
         <Header1 />
         <Header2 />

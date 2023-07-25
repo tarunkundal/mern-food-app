@@ -13,11 +13,7 @@ import Logo from "../../../assets/logo.png";
 
 const Footer = () => {
   return (
-    <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
-      color={useColorModeValue("gray.700", "gray.200")}
-      pb={{ base: "2rem", md: "0" }}
-    >
+    <Box bg="secondary" color={"primary.400"} pb={{ base: "2rem", md: "0" }}>
       <Container
         as={Stack}
         maxW={"6xl"}
@@ -30,23 +26,35 @@ const Footer = () => {
         <Image src={Logo} alt="logo" w="15rem" />
         <Text fontWeight={600}>© 2023 Mealster. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
-          <Button rounded="full" label={"Twitter"}>
-            <Link href="https://www.twitter.com">
+          <Link href="https://www.twitter.com">
+            <Button
+              rounded="full"
+              transition="ease-in-out .7s all"
+              _hover={{ transform: "scale(1.3)" }}
+            >
               <FaTwitter color="skyblue" />
-            </Link>
-          </Button>
+            </Button>
+          </Link>
 
-          <Button rounded="full" label={"YouTube"}>
-            <Link href={"https://www.youtube.com"}>
+          <Link href={"https://www.youtube.com"}>
+            <Button
+              rounded="full"
+              transition="ease-in-out .7s all"
+              _hover={{ transform: "scale(1.3)" }}
+            >
               <FaYoutube color="red" />
-            </Link>
-          </Button>
+            </Button>
+          </Link>
 
-          <Button rounded="full" label={"Instagram"}>
-            <Link href={"https://www.instagram.com"}>
+          <Link href={"https://www.instagram.com"}>
+            <Button
+              rounded="full"
+              transition="ease-in-out .7s all"
+              _hover={{ transform: "scale(1.3)" }}
+            >
               <FaInstagram color="orange" />
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </Stack>
       </Container>
     </Box>

@@ -19,18 +19,20 @@ const HeaderCom1 = () => {
       >
         <Button
           bg={"primary.100"}
-          _hover={{ bg: "primary.400" }}
-          color="white"
           size={{ base: "sm", md: "md" }}
+          color={"secondary"}
+          transition={"ease-in-out .4s"}
+          _hover={{ bg: "primary.400", transform: "scale(.94)" }}
         >
           <Link to={Routes.SIGNIN}>Sign In</Link>
         </Button>
 
         <Button
           bg={"primary.100"}
-          _hover={{ bg: "primary.400" }}
-          color="white"
+          color="secondary"
           size={{ base: "sm", md: "md" }}
+          transition={"ease-in-out .4s"}
+          _hover={{ bg: "primary.400", transform: "scale(.94)" }}
         >
           <Link to={Routes.SIGNUP}>Sign Up</Link>
         </Button>

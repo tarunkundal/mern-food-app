@@ -60,7 +60,7 @@ const MealHeaderItem = (props) => {
 
                     <Heading
                       fontSize={{ base: "lg", md: "xl" }}
-                      color="brown"
+                      color="teritory"
                       as="h5"
                       textAlign={"center"}
                       mt={2}
