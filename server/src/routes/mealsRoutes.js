@@ -20,4 +20,9 @@ router.put("/update/:_id", updatemeals);
 // delete meal
 router.delete("/delete/:_id", removeMeal);
 
+router.get("/getdata", (req, res) => {
+  console.log(req, res);
+  res.send("Hello from sidde");
+});
+
 module.exports = router;

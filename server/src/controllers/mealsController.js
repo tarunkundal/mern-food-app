@@ -3,7 +3,7 @@ const Meals = require("../models/mealModal");
 // new meal
 const createMeal = async (req, res) => {
   try {
-    console.log(req.body);
+    // console.log(req.body);
     const { name, descripition, price, category, images } = req.body;
 
     if (!name || !descripition || !price || !category || !images) {
@@ -22,9 +22,9 @@ const createMeal = async (req, res) => {
 
 // get all meals
 const allmeals = async (req, res) => {
+  console.log(req);
   try {
     const allmeals = await Meals.find();
-
     res.status(200).json(allmeals);
   } catch (error) {
     res.status(500).json({ message: error });
