@@ -15,6 +15,7 @@ const useFetchAllMeals = () => {
             },
           }
         );
+        console.log(res);
         const data = await res.json();
 
         setMeals(data);
