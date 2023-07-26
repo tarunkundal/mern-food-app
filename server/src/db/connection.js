@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
+    // `"mongodb+srv://tschauhan271:tarun@cluster0.qgyfaa5.mongodb.net/?retryWrites=true&w=majority"`,
     `mongodb+srv://tschauhan271:tarun@cluster0.qgyfaa5.mongodb.net/food_app?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,

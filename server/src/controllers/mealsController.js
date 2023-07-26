@@ -3,7 +3,7 @@ const Meals = require("../models/mealModal");
 // new meal
 const createMeal = async (req, res) => {
   try {
-    // console.log(req.body);
+    console.log(req.body);
     const { name, descripition, price, category, images } = req.body;
 
     if (!name || !descripition || !price || !category || !images) {
@@ -33,6 +33,7 @@ const allmeals = async (req, res) => {
 
 // update meals
 const updatemeals = async (req, res) => {
+  console.log(req, res);
   try {
     const { _id } = req.params;
     console.log(req.params);
