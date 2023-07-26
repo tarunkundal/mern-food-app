@@ -28,36 +28,34 @@ const MealItemForm = (props) => {
   };
 
   return (
-    <>
-      <form onSubmit={submitHandler}>
-        <Input
-          mealsQuantity={updatedInputQuantity}
-          label="Quantanity"
-          input={{
-            id: "amount" + props.id,
-            type: "number",
-            min: "1",
-            max: "5",
-            step: "1",
-            defaultValue: "1",
-          }}
-        />
-        <Center>
-          <Button
-            type="submit"
-            color={"white"}
-            alignContent={"center"}
-            bg="primary.100"
-            _hover={{ bg: "primary.400" }}
-            mt={3}
-            size={"sm"}
-          >
-            Add Item
-          </Button>
-        </Center>
-        {!amountIsValid && <p>Please enter the valid Amount(1-5).</p>}
-      </form>
-    </>
+    <form onSubmit={submitHandler}>
+      <Input
+        mealsQuantity={updatedInputQuantity}
+        label="Quantanity"
+        input={{
+          id: "amount" + props.id,
+          type: "number",
+          min: "1",
+          max: "5",
+          step: "1",
+          defaultValue: "1",
+        }}
+      />
+      <Center>
+        <Button
+          type="submit"
+          color={"white"}
+          alignContent={"center"}
+          bg="primary.100"
+          _hover={{ bg: "primary.400" }}
+          mt={3}
+          size={"sm"}
+        >
+          Add Item
+        </Button>
+      </Center>
+      {!amountIsValid && <p>Please enter the valid Amount(1-5).</p>}
+    </form>
   );
 };
 

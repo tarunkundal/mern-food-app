@@ -2,7 +2,7 @@
   "name": "food-order_app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:1000/api",
+  "proxy": "http://localhost:1000/api/",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/react": "^2.6.0",

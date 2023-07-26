@@ -40,39 +40,37 @@ const Body = () => {
       >
         {data.map((item) => {
           return (
-            <>
-              <Flex
-                key={item.id}
-                flexDirection={"column"}
-                alignItems={"center"}
-                textAlign={"center"}
-                justifyContent={"space-between"}
-                px="5px"
-                py="1rem"
-                w="300px"
-                bg={{ base: "none", md: "none" }}
-              >
-                <Image
-                  rounded={"lg"}
-                  src={item.img}
-                  alt={item.title}
-                  w="250px"
-                  height={{ base: "55%", md: "65%" }}
-                />
+            <Flex
+              key={item.id}
+              flexDirection={"column"}
+              alignItems={"center"}
+              textAlign={"center"}
+              justifyContent={"space-between"}
+              px="5px"
+              py="1rem"
+              w="300px"
+              bg={{ base: "none", md: "none" }}
+            >
+              <Image
+                rounded={"lg"}
+                src={item.img}
+                alt={item.title}
+                w="250px"
+                height={{ base: "55%", md: "65%" }}
+              />
 
-                <Text
-                  fontWeight={"700"}
-                  fontFamily={"open sans"}
-                  color="brown"
-                  fontSize={"18px"}
-                >
-                  {item.title}
-                </Text>
-                <Text fontSize={{ base: "14px", md: "1rem" }}>
-                  {item.descripition}
-                </Text>
-              </Flex>
-            </>
+              <Text
+                fontWeight={"700"}
+                fontFamily={"open sans"}
+                color="brown"
+                fontSize={"18px"}
+              >
+                {item.title}
+              </Text>
+              <Text fontSize={{ base: "14px", md: "1rem" }}>
+                {item.descripition}
+              </Text>
+            </Flex>
           );
         })}
       </Flex>

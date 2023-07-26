@@ -1,24 +1,29 @@
 import { useEffect } from "react";
-import axios, { AxiosHeaders } from "axios";
+import axios from "axios";
 import { useMealStore } from "../store/meals/MealProvider";
 
 const useFetchAllMeals = () => {
   const { setMeals } = useMealStore();
-  // useEffect(() => {
-  //   const getMeals = async () => {
-  //     const res = await axios.get("http://localhost:2000/api/meals/allmeals");
-  //     console.log(res);
-  //     // setMeals(res.data);
-  //   };
-  //   getMeals();
-  // }, []);
+  useEffect(() => {
+    const getMeals = async () => {
+      try {
+        const res = await axios.get(
+          "http://localhost:1000/api/meals/allmeals",
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        const data = await res.json();
 
-  const fetchMeal = async () => {
-    const res = await fetch("http://localhost:1000/api/meals/allmeals");
-    const data = await res.json();
-    console.log(data);
-  };
-  fetchMeal();
+        setMeals(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getMeals();
+  }, []);
 };
 
 export default useFetchAllMeals;

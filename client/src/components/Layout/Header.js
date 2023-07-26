@@ -1,7 +1,10 @@
-import { Box, Heading, Image, Stack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Stack } from "@chakra-ui/react";
 import mealsImage from "../../assets/meals.jpg";
 import HeaderCartButton from "./HeaderCartButton";
 import HeaderSearch from "./HeaderSearch";
+import { BiLogIn } from "react-icons/bi";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import Routes from "../../routes/Routes";
 
 const Header = (props) => {
   return (
@@ -26,7 +29,20 @@ const Header = (props) => {
 
         <HeaderSearch />
 
-        <HeaderCartButton onClickCartButton={props.onShowCart} />
+        <Flex alignItems={"center"} justifyContent={"space-between"}>
+          <Box
+            cursor={"pointer"}
+            color={"teritory"}
+            _hover={{ color: "secondary" }}
+            mr={"1rem"}
+          >
+            <Link to={Routes.SIGNIN}>
+              <BiLogIn fontSize={"2rem"} />
+            </Link>
+          </Box>
+
+          <HeaderCartButton onClickCartButton={props.onShowCart} />
+        </Flex>
       </Stack>
       <Box w={"100%"} zIndex={0} h={"25rem"} overflow={"hidden"}>
         <Image

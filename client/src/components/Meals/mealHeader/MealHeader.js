@@ -22,14 +22,21 @@ const data = [
   },
   {
     imageURL:
-      "https://images.unsplash.com/photo-1505253668822-42074d58a7c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bm9ydGglMjBpbmRpYW4lMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "https://b.zmtcdn.com/data/o2_assets/019409fe8f838312214d9211be010ef31678798444.jpeg",
     name: "North Indian",
     id: "north indian",
   },
   {
-    imageURL: "https://www.chefspencil.com/wp-content/uploads/Idli.jpg.webp",
+    imageURL:
+      "https://b.zmtcdn.com/data/o2_assets/8dc39742916ddc369ebeb91928391b931632716660.png",
     name: "South Indian",
     id: "south indian",
+  },
+  {
+    imageURL:
+      "https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png",
+    name: "Burger",
+    id: "burger",
   },
 ];
 
@@ -37,7 +44,7 @@ const MealHeader = () => {
   const id = data.map((item) => item.id);
   return (
     <>
-      <Box mt="3rem" bgColor={"secondary"} py={10} color={"primary.100"}>
+      <Box mt="3rem" bg={"secondary"} py={10} color={"primary.100"}>
         <Heading
           textAlign={{ base: "center", md: "left" }}
           ml={{ base: "0", md: "5rem" }}
@@ -46,8 +53,9 @@ const MealHeader = () => {
         >
           Inspiration for your first order
         </Heading>
-
-        <MealHeaderItem data={data} key={id} />
+        <Box w={"85%"} mx={"auto"}>
+          <MealHeaderItem data={data} key={id} />
+        </Box>
       </Box>
     </>
   );
