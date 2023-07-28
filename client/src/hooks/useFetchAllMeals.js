@@ -8,7 +8,7 @@ const useFetchAllMeals = () => {
     const getMeals = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:1000/api/meals/allmeals",
+          "http://localhost:5050/api/meals/allmeals",
           {
             headers: {
               "Content-Type": "application/json",
