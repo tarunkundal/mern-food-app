@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
-const PORT = process.env.PORT || 1000;
+const PORT = process.env.PORT || 5050;
 
 // db connection
 require("./src/db/connection");
@@ -16,7 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: true,
+    // origin: "http://localhost:3000",
   })
 );
 
