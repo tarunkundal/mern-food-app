@@ -1,4 +1,3 @@
-// https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf
 import { Flex, Image, Text } from "@chakra-ui/react";
 import BodyCom1 from "./BodyCom1";
 import BodyCom2 from "./BodyCom2";
