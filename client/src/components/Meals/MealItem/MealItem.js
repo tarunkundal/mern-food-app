@@ -11,9 +11,6 @@ import MealItemForm from "./MealItemForm";
 import { useContext } from "react";
 import CartContext from "../../../store/cart-context";
 
-// const IMAGE =
-//   "https://images.unsplash.com/photo-1619683815335-2b5b130a1baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHN0cmVldCUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60";
-
 const MealItem = (props) => {
   const cartCtx = useContext(CartContext);
 

@@ -1,8 +1,7 @@
 // https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf
 import { Flex, Image, Text } from "@chakra-ui/react";
-import Body1 from "./BodyCom1";
-import Header from "../Header";
-import Footer from "../Footer";
+import BodyCom1 from "./BodyCom1";
+import BodyCom2 from "./BodyCom2";
 
 const data = [
   {
@@ -36,7 +35,7 @@ const Body = () => {
         h="450px"
         px={{ base: "", md: "2rem" }}
         justifyContent={"space-around"}
-        bg="#F5F5F5"
+        bg={"secondary"}
       >
         {data.map((item) => {
           return (
@@ -50,6 +49,8 @@ const Body = () => {
               py="1rem"
               w="300px"
               bg={{ base: "none", md: "none" }}
+              borderTop={"2px"}
+              borderColor={"primary.100"}
             >
               <Image
                 rounded={"lg"}
@@ -57,6 +58,7 @@ const Body = () => {
                 alt={item.title}
                 w="250px"
                 height={{ base: "55%", md: "65%" }}
+                boxShadow={"2xl"}
               />
 
               <Text
@@ -74,7 +76,8 @@ const Body = () => {
           );
         })}
       </Flex>
-      <Body1 />
+      <BodyCom1 />
+      <BodyCom2 />
     </>
   );
 };

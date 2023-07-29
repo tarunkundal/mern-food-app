@@ -10,7 +10,15 @@ const Header = () => {
   };
 
   return (
-    <Flex pl={{ base: "2rem", md: "5rem" }} bg="secondary">
+    <Flex
+      pl={{ base: "2rem", md: "5rem" }}
+      bg="secondary"
+      color={{ base: "white", md: "black" }}
+      bgImage={{
+        base: "https://img.freepik.com/free-photo/top-view-thanksgiving-food-border-composition-with-copy-space_23-2149114485.jpg?size=626&ext=jpg&ga=GA1.1.1061266116.1690648985&semt=ais",
+        md: "",
+      }}
+    >
       <Box w={{ base: "100%", md: "60%" }}>
         <Header1 />
         <Header2 />

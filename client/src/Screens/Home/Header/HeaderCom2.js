@@ -35,7 +35,7 @@ const HeaderCom2 = () => {
         <Text fontSize={"18px"} fontWeight={"bold"}>
           POPULAR CITIES IN INDIA
         </Text>
-        <Text color={"gray.600"} fontWeight={"medium"}>
+        <Text color={{ md: "gray.600" }} fontWeight={"medium"}>
           Ahmedabad, Bangalore, Chennai, Delhi, Gurgaon, Hyderabad, Kolkata,
           Mumbai, Pune, & more.
         </Text>
