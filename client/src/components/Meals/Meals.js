@@ -1,3 +1,4 @@
+import MealFilters from "../MealFilters";
 import MealsMainHeader from "./MealsMainHeader";
 import MealHeader from "./mealHeader/MealHeader";
 import RandomMeals from "./mealsByCategory/RamdomMeals";
@@ -7,6 +8,7 @@ const Meals = () => {
     <>
       <MealsMainHeader />
       <MealHeader />
+      <MealFilters />
       <RandomMeals />
     </>
   );
