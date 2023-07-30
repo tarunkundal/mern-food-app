@@ -3,6 +3,21 @@ import { useMealStore } from "../../../store/meals/MealProvider";
 import MealItem from "../MealItem/MealItem";
 import useFetchAllMeals from "../../../hooks/useFetchAllMeals";
 
+const allMeal = [
+  {
+    _id: "1",
+    name: "Gulab Jamun",
+    price: "240",
+    descripition: "Gulabjamun descripition",
+    category: "sweet",
+    images: [
+      {
+        url: "https://img.freepik.com/premium-photo/gulab-jamun-bowl-copper-antique-bowl-with-spoon-indian-dessert-sweet-dish_136354-7666.jpg?size=626&ext=jpg&ga=GA1.1.1061266116.1690648985&semt=ais",
+      },
+    ],
+  },
+];
+
 const RandomMeals = () => {
   useFetchAllMeals();
 
@@ -34,7 +49,7 @@ const RandomMeals = () => {
       <Center my={{ base: "3", md: "7" }}>
         <Heading color={"primary.100"}>Your Favourite Meals are here</Heading>
       </Center>
-      {allMeals.map((meal) => {
+      {allMeal.map((meal) => {
         return (
           <MealItem
             key={meal._id}

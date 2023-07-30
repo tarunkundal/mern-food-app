@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Input from "../../UI/Input";
-import { Button, Center } from "@chakra-ui/react";
+import { Button, Center, Flex } from "@chakra-ui/react";
 
 const MealItemForm = (props) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
@@ -29,31 +29,30 @@ const MealItemForm = (props) => {
 
   return (
     <form onSubmit={submitHandler}>
-      <Input
-        mealsQuantity={updatedInputQuantity}
-        label="Quantanity"
-        input={{
-          id: "amount" + props.id,
-          type: "number",
-          min: "1",
-          max: "5",
-          step: "1",
-          defaultValue: "1",
-        }}
-      />
-      <Center>
+      <Flex justifyContent={"space-between"} alignItems={"center"} my={3}>
+        <Input
+          mealsQuantity={updatedInputQuantity}
+          label="Quantanity"
+          input={{
+            id: "amount" + props.id,
+            type: "number",
+            min: "1",
+            max: "5",
+            step: "1",
+            defaultValue: "1",
+          }}
+        />
         <Button
           type="submit"
           color={"white"}
           alignContent={"center"}
-          bg="primary.100"
-          _hover={{ bg: "primary.400" }}
-          mt={3}
+          bg="primary.400"
+          _hover={{ bg: "primary.100" }}
           size={"sm"}
         >
           Add Item
         </Button>
-      </Center>
+      </Flex>
       {!amountIsValid && <p>Please enter the valid Amount(1-5).</p>}
     </form>
   );
